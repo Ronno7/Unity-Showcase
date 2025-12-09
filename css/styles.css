@@ -106,6 +106,18 @@
     color: var(--text-color);
     margin-left: 1rem;
   }
+
+  .pdf-toggle summary {
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  }
+
+  .pdf-toggle iframe {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  }
+
   /* Lightbox overlay */
   #lightbox {
     position: fixed;
