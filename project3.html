@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Terrible Tweeters – My Unity Portfolio</title>
+  <title>RPG Multiplayer – My Unity Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/theme-toggle.js" defer></script>
@@ -14,9 +14,9 @@
     <nav class="navbar">
       <a href="index.html" class="logo">Ryan's Portfolio</a>
       <ul class="nav-links">
-        <li><a href="project1.html">Split Horizon</a></li>
-        <li><a href="project2.html">Hero Born Custom</a></li>
-        <li><a href="project3.html">Terrible Tweeters</a></li>
+        <li><a href="project1.html">Le Chapeau</a></li>
+        <li><a href="project2.html">Battle Royale Multiplayer</a></li>
+        <li><a href="project3.html">RPG Multiplayer</a></li>
       </ul>
       <button id="theme-toggle" class="theme-toggle">🌙</button>
     </nav>
@@ -24,29 +24,46 @@
 
   <main>
     <section class="project">
-      <h1>Terrible Tweeters</h1>
-      <p><a href="https://github.com/Ronno777/Terrible-Tweeters" target="_blank">View on GitHub</a></p>
-      <p class="description">Terrible Tweeters is a 2D physics-based puzzle game inspired by Angry Birds, recreated from Jason Weimann’s Unity tutorial. Players launch birds to topple structures and defeat enemies using a drag-and-release slingshot mechanic, with destructible environments and satisfying physics interactions.</p>
-      <div class="webgl-container">
-        <iframe src="https://ronno777.github.io/Terrible-Tweeters/" allowfullscreen></iframe>
-      </div>
-      <p class="description">This custom iteration builds upon the original project by adding refined mechanics and a full game loop. The game now features custom art and sound effects and new handcrafted levels and a title screen and a custom win screen with "Thanks for Playing" message and restart options.</p>
-      <ul class="features">
-        <li>Slingshot launching system using mouse input and Rigidbody2D physics</li>
-        <li>Projectile trajectory prediction with line renderers</li>
-        <li>Destructible structures built from stacked colliders</li>
-        <li>Enemy knockout mechanics through collision or destabilization</li>
-        <li>Level reset and retry logic with basic win conditions</li>
+      <h1>RPG Multiplayer</h1>
 
+      <p><a href="https://github.com/Ronno7/RPG-MP" target="_blank" rel="noopener">View source on GitHub</a></p>
+
+      <p class="description">
+        RPG Multiplayer is a top-down online action RPG built in Unity using Photon PUN 2. Players
+        explore a shared tile-based world, fight networked enemies, collect gold and health pickups,
+        and respawn after death while keeping their progress in the session.
+      </p>
+
+      <p class="description">
+        The project focuses on building a complete multiplayer loop: lobby and room management,
+        synchronized player spawning and movement, networked combat and AI, and shared UI such as
+        nameplates, health bars, and an in-game chat box that broadcasts messages to all players.
+      </p>
+
+      <div class="webgl-container">
+        <iframe src="https://ronno7.github.io/RPG-MP/" title="RPG Multiplayer WebGL build placeholder" allowfullscreen></iframe>
+      </div>
+
+      <p class="description">
+        Key systems implemented for RPG Multiplayer:
+      </p>
+
+      <ul class="features">
+        <li>Photon PUN 2 networking with master server connection, lobby, and room browser.</li>
+        <li>Top-down RPG controller with WASD movement, melee attacks toward the mouse, and respawn logic.</li>
+        <li>Networked enemies driven by the host, including chase, attack, damage, and death with loot spawns.</li>
+        <li>Gold and health pickups that use RPCs to update player stats and on-screen UI across all clients.</li>
+        <li>World-space header UI showing player and enemy names plus synced health bars.</li>
+        <li>In-game chat box with scrollable message log and synchronized chat messages between players.</li>
       </ul>
+
       <div class="screenshots">
         <figure>
-          <img src="img/terrible-tweeters_3.png" alt="Terrible Tweeters screenshot 1">
-          <figcaption></figcaption>
-        </figure>
-        <figure>
-          <img src="img/terrible-tweeters_1.png" alt="Terrible Tweeters screenshot 2">
-          <figcaption></figcaption>
+          <img src="img/rpg1.jpg" alt="RPG Multiplayer session with players fighting enemies and collecting pickups">
+          <figcaption>
+            Two players in a shared online session battling enemies, collecting pickups, and chatting while
+            exploring the tile-based map.
+          </figcaption>
         </figure>
       </div>
     </section>
